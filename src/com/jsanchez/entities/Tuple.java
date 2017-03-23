@@ -14,6 +14,18 @@ public class Tuple {
         this.value = value;
     }
 
+    @Override
+    public String toString() {
+        return "Tuple{" +
+                "key='" + key + '\'' +
+                ", value='" + value + '\'' +
+                '}';
+    }
+
+    public Tuple() {
+
+    }
+
     public String getKey() {
         return key;
     }
