@@ -18,7 +18,7 @@ public class TupleService {
     @Produces(MediaType.APPLICATION_JSON)
     @Path("{key}")
     public String getTuple(@PathParam("key") String key) {
-
+        System.out.println("Getting tuple. Key: "+key);
         Tuple tuple = null;
         try {
             tuple = access.getAndDeleteTuple(key);

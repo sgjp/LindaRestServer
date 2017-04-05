@@ -7,18 +7,18 @@ public class Tuple {
 
     private String key;
 
-    private String value;
+    private String data;
 
-    public Tuple(String key, String value) {
+    public Tuple(String key, String data) {
         this.key = key;
-        this.value = value;
+        this.data = data;
     }
 
     @Override
     public String toString() {
         return "Tuple{" +
                 "key='" + key + '\'' +
-                ", value='" + value + '\'' +
+                ", value='" + data + '\'' +
                 '}';
     }
 
@@ -34,11 +34,11 @@ public class Tuple {
         this.key = key;
     }
 
-    public String getValue() {
-        return value;
+    public String getData() {
+        return data;
     }
 
-    public void setValue(String value) {
-        this.value = value;
+    public void setData(String data) {
+        this.data = data;
     }
 }

@@ -7,7 +7,7 @@ public class Database {
 
     public static Connection getConnection() throws Exception {
         try {
-            String connectionURL = "jdbc:mysql://128.233.173.24:3306/tuplespace";
+            String connectionURL = "jdbc:mysql://localhost:3306/tuplespace?verifyServerCertificate=false&useSSL=false";
             Connection connection = null;
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             connection = DriverManager.getConnection(connectionURL, "jsanchez", "madmuc");
